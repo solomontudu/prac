@@ -1,0 +1,60 @@
+.footer {
+    background-color: grey;
+    padding: 1rem;
+
+    grid-row: 3 / 3;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+
+    &-con {
+        //background-color: #fff;
+
+        &--2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &--1 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &-svg {
+        height: 4.5rem;
+        width: 4.5rem;
+
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+
+        &--iconf {
+            fill: #fff;
+
+            &:hover {
+                fill: #0864b9;
+            }
+        }
+
+        &--iconi {
+            fill: #fff;
+
+            &:hover {
+                fill: #ac05c2;
+            }
+        }
+
+        &--icont {
+            fill: #fff;
+
+            &:hover {
+                fill: #0c7be2;
+            }
+        }
+    }
+}

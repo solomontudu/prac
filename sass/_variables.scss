@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,700');
+
+$primary-color: #ff9a04;
+$primary-color-1: #ca7e0c;
+
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: $font-display;
+}

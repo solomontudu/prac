@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,700");
+/* line 8, ../sass/_variables.scss */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 16, ../sass/_variables.scss */
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* line 2, ../sass/_typography.scss */
+.main-heading {
+  font-size: 4.5rem;
+}
+/* line 6, ../sass/_typography.scss */
+.main-text {
+  font-size: 2rem;
+}
+
+/* line 13, ../sass/_typography.scss */
+.footer-legal {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* line 1, ../sass/_sidebar.scss */
+.sidebar {
+  background-color: #ff9a04;
+  -webkit-box-shadow: 3px 0 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 0 15px rgba(0, 0, 0, 0.4);
+  grid-row: 1 / -1;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 9, ../sass/_sidebar.scss */
+.sidebar-svg {
+  width: 4.5rem;
+  height: 4.5rem;
+  fill: #fff;
+}
+
+/* line 1, ../sass/_page.scss */
+.container {
+  display: grid;
+  grid-template-rows: 6rem minmax(-webkit-min-content, 95vh) minmax(8rem, -webkit-min-content);
+  grid-template-rows: 6rem minmax(min-content, 95vh) minmax(8rem, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+/* line 1, ../sass/_header.scss */
+.header {
+  background-color: #cfcece;
+  grid-column: full-start / full-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 11, ../sass/_header.scss */
+.header-svg {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+/* line 16, ../sass/_header.scss */
+.header-sbx {
+  background-color: #fff;
+  border: 2px solid #b3b2b2;
+  height: 3rem;
+  width: 30vw;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 31, ../sass/_header.scss */
+.search-bx {
+  padding: 6px 10px;
+  width: 90%;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+/* line 42, ../sass/_header.scss */
+.search-btn {
+  background-color: #fff;
+  border: none;
+  width: 10%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 55, ../sass/_header.scss */
+.search-svg {
+  height: 2rem;
+  width: 2rem;
+  margin: auto 0;
+  cursor: pointer;
+}
+/* line 64, ../sass/_header.scss */
+.search-icon {
+  fill: #dbdbdb;
+}
+/* line 67, ../sass/_header.scss */
+.search-icon:hover {
+  fill: #c4c3c3;
+}
+
+/* line 1, ../sass/_body.scss */
+.main {
+  grid-row: 2 / 2;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(4rem, 1fr) repeat(4, minmax(8rem, -webkit-min-content)) minmax(4rem, 1fr);
+  grid-template-rows: minmax(4rem, 1fr) repeat(4, minmax(8rem, min-content)) minmax(4rem, 1fr);
+}
+/* line 11, ../sass/_body.scss */
+.main-con {
+  padding: 2rem;
+  grid-row: 2 / 4;
+  grid-column: 2 / 6;
+  text-align: center;
+}
+
+/* line 23, ../sass/_body.scss */
+.add {
+  grid-row: 2 / 2;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(4rem, 1fr) repeat(4, minmax(8rem, -webkit-min-content)) minmax(4rem, 1fr);
+  grid-template-rows: minmax(4rem, 1fr) repeat(4, minmax(8rem, min-content)) minmax(4rem, 1fr);
+}
+/* line 33, ../sass/_body.scss */
+.add-con {
+  padding: 2rem;
+  grid-row: 2 / 4;
+  grid-column: 2 / 6;
+  text-align: center;
+}
+
+/* line 1, ../sass/_footer.scss */
+.footer {
+  background-color: grey;
+  padding: 1rem;
+  grid-row: 3 / 3;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+}
+/* line 15, ../sass/_footer.scss */
+.footer-con--2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 21, ../sass/_footer.scss */
+.footer-con--1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 28, ../sass/_footer.scss */
+.footer-svg {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+/* line 32, ../sass/_footer.scss */
+.footer-svg:not(:last-child) {
+  margin-right: 1rem;
+}
+/* line 36, ../sass/_footer.scss */
+.footer-svg--iconf {
+  fill: #fff;
+}
+/* line 39, ../sass/_footer.scss */
+.footer-svg--iconf:hover {
+  fill: #0864b9;
+}
+/* line 44, ../sass/_footer.scss */
+.footer-svg--iconi {
+  fill: #fff;
+}
+/* line 47, ../sass/_footer.scss */
+.footer-svg--iconi:hover {
+  fill: #ac05c2;
+}
+/* line 52, ../sass/_footer.scss */
+.footer-svg--icont {
+  fill: #fff;
+}
+/* line 55, ../sass/_footer.scss */
+.footer-svg--icont:hover {
+  fill: #0c7be2;
+}
+
+/*# sourceMappingURL=main.css.map */

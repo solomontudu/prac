@@ -1,0 +1,14 @@
+.sidebar {
+    background-color: $primary-color;
+    box-shadow: 3px 0 15px rgba(#000, .4);
+    grid-row: 1 / -1; 
+
+    display: grid;
+    justify-content: center;
+    
+    &-svg {
+        width: 4.5rem;
+        height: 4.5rem;
+        fill: #fff;
+    }
+}

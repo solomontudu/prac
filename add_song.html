@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dhorom seren | Add song</title>
+</head>
+
+<body class="container">
+    <div class="sidebar">
+        <svg class="sidebar-svg">
+            <use xlink:href="img/sprite.svg#icon-books" class="sidebar-icon"></use>
+        </svg>
+    </div>
+    <div class="header">
+        <!-- 
+        <svg class="header-svg">
+                <use xlink:href="img/sprite.svg#icon-books" class="header-icon"></use>
+        </svg>
+        -->
+        <form action="" method="POST" class="header-sbx">
+            <input type="text" class="search-bx" name="query" placeholder="Seren nombor / nitum">
+            <button type="submit" class="search-btn">
+                <svg class="search-svg" name="submit" type="submit">
+                    <use xlink:href="img/sprite.svg#icon-search" class="search-icon"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <div class="add">
+        <form class="add-con" method="POST" action="process.php">
+            <h1 class="main-heading">Add song</h1>
+            <!-- song number -->
+            <div class="add-separator">
+                <input type="text" class="add-s" name="song_n" placeholder="Seren nombor">
+            </div>
+            <!-- song title -->
+            <div class="add-separator">
+                <input type="text" class="add-s" name="song_nm" placeholder="Seren nitum">
+            </div>
+            <!-- verse 1 -->
+            <div class="add-separator">
+                <textarea name="varse1" id="verse1" cols="30" rows="10" class="add-verse" placeholder="Verse 1"></textarea>
+            </div>
+            <!-- verse 2 -->
+            <div class="add-separator">
+                <textarea name="chorus" id="chorus" cols="30" rows="10" class="add-verse" placeholder="Chorus"></textarea>
+            </div>
+            <!-- verse 3 -->
+            <div class="add-separator">
+                <textarea name="varse2" id="verse2" cols="30" rows="10" class="add-verse" placeholder="Verse 2"></textarea>
+            </div>
+            <!-- verse 4 -->
+            <div class="add-separator">
+                <textarea name="varse3" id="verse3" cols="30" rows="10" class="add-verse" placeholder="Verse 3"></textarea>
+            </div>
+            <!-- verse 5 -->
+            <div class="add-separator">
+                <textarea name="varse4" id="verse4" cols="30" rows="10" class="add-verse" placeholder="Verse 4"></textarea>
+            </div>
+            <!-- verse 6 -->
+            <div class="add-separator">
+                <textarea name="varse5" id="verse5" cols="30" rows="10" class="add-verse" placeholder="Verse 5"></textarea>
+            </div>
+            <!-- verse 7 -->
+            <div class="add-separator">
+                <textarea name="varse6" id="verse6" cols="30" rows="10" class="add-verse"placeholder="Verse 6"></textarea>
+            </div>
+            <input type="Submit" value="Submit" name="submit" class="add-btn">
+
+        </form>
+
+    </div>
+    <div class="footer">
+        <div class="footer-con footer-con--1">
+            <p class="footer-legal">
+                &copy; Copyrigh 2018 | All rights reserved.
+            </p>
+
+        </div>
+        <!-- starting of the second division in footer  -->
+        <div class="footer-con footer-con--2">
+            <a href="https://www.facebook.com/solomon.tudu" class="footer-link">
+                <svg class="footer-svg">
+                    <use xlink:href="img/sprite.svg#icon-facebook" class="footer-svg--iconf"></use>
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/solomontudu/" class="footer-link">
+                <svg class="footer-svg">
+                    <use xlink:href="img/sprite.svg#icon-instagram" class="footer-svg--iconi"></use>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com/solomon_tudu" class="footer-link">
+                <svg class="footer-svg">
+                    <use xlink:href="img/sprite.svg#icon-twitter" class="footer-svg--icont"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="js/script.js" type="text/javascript"></script>
+
+</html>
